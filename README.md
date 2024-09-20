@@ -9,8 +9,8 @@
 * Other files are description of functions and procedures from func
 
 # CPP files descriprion
-* closest.cpp - finds the closest pair of points on point set, uses Graham's algorithms
-* convexHull.cpp - finds minimal convex hull of point set
+* closest.cpp - finds the closest pair of points on point set
+* convexHull.cpp - finds minimal convex hull of point set, uses Graham's algorithms
 * median.cpp - finds median of array, uses median of medians' algorithm 
 * miltiply.cpp - finds product of inputed values, uses Karatsuba's algorithm 
 * power.cpp - finds value of input in N degrees

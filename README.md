@@ -9,10 +9,10 @@
 * Other files are description of functions and procedures from func
 
 # CPP files descriprion
-* closest.cpp - finds closest pair of point on point set, uses Graham's algorithms
+* closest.cpp - finds the closest pair of points on point set, uses Graham's algorithms
 * convexHull.cpp - finds minimal convex hull of point set
 * median.cpp - finds median of array, uses median of medians' algorithm 
 * miltiply.cpp - finds product of inputed values, uses Karatsuba's algorithm 
 * power.cpp - finds value of input in N degrees
-* segments.cpp - divides array on 2 parts with minimal difference in the sum of elements, not completed yet
-* substring.cpp - complexed form of previous algorithm, divides array on N parts with minimal difference in the sum of elements, not completed yet
+* segments.cpp - divides array into 2 parts with minimal difference in the sum of elements, not completed yet
+* substring.cpp - complexed form of previous algorithm, divides array into N parts with minimal difference in the sum of elements, not completed yet

@@ -3,12 +3,12 @@
 * Contains realisations of already known algorithms
 * like Graham's algorithm to find ConvexHull of point set
 
-CMakeLists.txt files used for building project
+CMakeLists.txt files are used for building project
 
 # Files on "executable" directory
 * SDIA_PR2.cpp is executable file
 * output.txt used for sving data to visualize executable time of algorithms
-* DataToGraph runs onlu while testing algorithms (position #9 in digital menu)
+* DataToGraph runs only while testing algorithms (position #9 in digital menu)
 
 # CPP files on "source" directory
 * closest.cpp - finds the closest pair of points on point set

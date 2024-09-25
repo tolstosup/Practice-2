@@ -63,38 +63,18 @@ uint distance(Point a, Point b)
 	return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
 }
 
-std::vector<Point> sort(std::vector<Point> points, char axis)
+bool compareX(Point a, Point b)
 {
-	std::vector<Point> point = points;
-	if (axis == 'x')
-	{
-		for (int i = 0; i < point.size(); i++)
-		{
-			for (int j = 0; j < point.size(); j++)
-			{
-				if (point[i].x < point[j].x)
-				{
-					std::swap(point[i], point[j]);
-				}
-			}
-		}
-	}
+	if (a.x < b.x)
+		return true;
+	return false;
+}
 
-	else if (axis == 'y')
-	{
-		for (int i = 0; i < point.size(); i++)
-		{
-			for (int j = 0; j < point.size(); j++)
-			{
-				if (point[i].y < point[j].y)
-				{
-					std::swap(point[i], point[j]);
-				}
-			}
-		}
-	}
-
-	return point;
+bool compareY(Point a, Point b)
+{
+	if (a.y < b.y)
+		return true;
+	return false;
 }
 
 std::vector<Point> partition(std::vector<Point> points, uint start, uint end)
@@ -127,7 +107,8 @@ std::pair<Point, Point> closestSplitPair(std::vector<Point> Px, std::vector<Poin
 	int mediane = Px[((Px.size() - 1) / 2)].x;
 	uint best = (uint)mediane;
 	std::pair<Point, Point> bestPair;
-	std::vector<Point> Sy = sort(xPMDelta(Py, mediane, d), 'y');
+	std::vector<Point> Sy = xPMDelta(Py, mediane, d);
+	std::sort(Sy.begin(), Sy.end(), &compareY);
 
 	for (uint i = 0; i < (uint)Sy.size(); i++)
 	{
@@ -175,6 +156,8 @@ std::pair<Point, Point> bestOfThree(std::pair<Point, Point> l, std::pair<Point, 
 
 std::pair<Point, Point> closestPair(std::vector<Point> Px, std::vector<Point> Py)
 {
+	if (Px.size() < 2)
+		return {};
 	if (Px.size() <= 3)
 	{
 		std::pair<Point, Point> result = { Px[0], Px[1] };
@@ -219,9 +202,9 @@ void findClosestPointPair()
 {
 	system("cls");
 	
-	std::vector<Point> points = inputPoints(), Px, Py;
-	Px = sort(points, 'x');
-	Py = sort(points, 'y');
+	std::vector<Point> points = inputPoints(), Px = points, Py = points;
+	std::sort(Px.begin(), Px.end(), &compareX);
+	std::sort(Py.begin(), Py.end(), &compareY);
 
 	std::pair<Point, Point> result = closestPair(Px, Py);
 	std::cout << "\nДве ближайшие точки\n(" << result.first.x << ", " << result.first.y << ") и (" << result.second.x << ", " << result.second.y << ")\n\n";

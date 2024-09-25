@@ -7,8 +7,10 @@ double rotate(Point a, Point b, Point c)
 
 std::vector<Point> convex(std::vector<Point> points)
 {
-	if (points.size() == 0)
+	if (points.size() < 3)
 		return {};
+	else if (points.size() < 4)
+		return points;
 
 	std::vector<int> P;
 	for (int i = 0; i < points.size(); i++)
@@ -37,7 +39,7 @@ std::vector<Point> convex(std::vector<Point> points)
 	S.push_back(P[0]);
 	S.push_back(P[1]);
 
-	for (int i = 3; i < points.size(); ++i) {
+	for (int i = 3; i < points.size(); i++) {
 		while (rotate(points[S[S.size() - 2]], points[S.back()], points[i]) < 0) 
 		{
 			S.pop_back();

@@ -7,6 +7,7 @@
 * SDIA_PR2 is executable file
 * func.h header file with declaring of functions and typedef data types
 * Other files are description of functions and procedures from func
+* DataToGraph runs onlu while testing algorithms (position #9 in digital menu)
 
 # CPP files descriprion
 * closest.cpp - finds the closest pair of points on point set

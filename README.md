@@ -3,7 +3,7 @@
 * Contains realisations of already known algorithms
 * like Graham's algorithm to find ConvexHull of point set
 
-# CMakeLists.txt files used for building project
+CMakeLists.txt files used for building project
 
 # Files on "executable" directory
 * SDIA_PR2.cpp is executable file

@@ -14,6 +14,7 @@
 * median.cpp - finds median of array, uses median of medians' algorithm 
 * miltiply.cpp - finds product of inputed values, uses Karatsuba's algorithm 
 * power.cpp - finds value of input in N degrees
-* array.cpp - divides array into 2 parts with minimal difference in the sum of elements, not completed yet
-* segments.cpp - complexed form of previous algorithm, divides array into N parts with minimal difference in the sum of elements, not completed yet
-* substring.cpp - finds longest common algorithm, works incprrect
+* array.cpp - divides array into 2 parts with minimal difference in the sum of elements
+* segments.cpp - complexed form of previous algorithm, divides array into N parts with minimal difference in the sum of elements
+* substring.cpp - finds longest common algorithm, uses dynamic programming
+* tests.cpp - file with tests for functions from upper files, 

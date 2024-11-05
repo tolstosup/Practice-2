@@ -1,0 +1,11 @@
+/mnt/c/Users/Роман/Practice-2/build/CMakeFiles/test.dir
+/mnt/c/Users/Роман/Practice-2/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Роман/Practice-2/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Роман/Practice-2/build/executable/CMakeFiles/executable.dir
+/mnt/c/Users/Роман/Practice-2/build/executable/CMakeFiles/test.dir
+/mnt/c/Users/Роман/Practice-2/build/executable/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Роман/Practice-2/build/executable/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Роман/Practice-2/build/source/CMakeFiles/source.dir
+/mnt/c/Users/Роман/Practice-2/build/source/CMakeFiles/test.dir
+/mnt/c/Users/Роман/Practice-2/build/source/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Роман/Practice-2/build/source/CMakeFiles/rebuild_cache.dir

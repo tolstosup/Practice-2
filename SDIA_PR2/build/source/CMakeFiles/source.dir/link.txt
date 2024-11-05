@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsource.a CMakeFiles/source.dir/closest.cpp.o CMakeFiles/source.dir/multiply.cpp.o CMakeFiles/source.dir/median.cpp.o CMakeFiles/source.dir/power.cpp.o CMakeFiles/source.dir/substring.cpp.o CMakeFiles/source.dir/convexHull.cpp.o CMakeFiles/source.dir/array.cpp.o CMakeFiles/source.dir/segments.cpp.o
+/usr/bin/ranlib libsource.a

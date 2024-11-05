@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/executable.dir/SDIA_PR2.cpp.o -o executable  ../source/libsource.a 

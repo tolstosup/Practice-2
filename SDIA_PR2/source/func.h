@@ -7,7 +7,7 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
-#include <Windows.h>
+//#include <Windows.h>
 #include <stack>
 #include <chrono>
 #include <map>
